@@ -26,6 +26,6 @@ public class prefab4 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // Physics.IgnoreCollision(this.gameObject.GetComponent<Collider>(), points.GetComponent<Collider>());
     }
 }
