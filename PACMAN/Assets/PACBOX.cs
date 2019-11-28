@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ghosts : MonoBehaviour
+public class PACBOX : MonoBehaviour
 {
+    int health = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +14,19 @@ public class Ghosts : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        void OnTriggerEnter2D(Collider2D co)
+        {
+            if (co.name == "prefab4")
+                health--;
+
+
+
+               
+            
+        }
+
+        nextScene();
     }
+
+
 }
