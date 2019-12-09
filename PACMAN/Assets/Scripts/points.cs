@@ -10,6 +10,8 @@ public class points : MonoBehaviour
     
     void OnTriggerEnter2D(Collider2D co)
     {
+        
+
         if (co.gameObject.tag == "Player")
         {
 
@@ -25,8 +27,11 @@ public class points : MonoBehaviour
     }
 
     private void Update()
+
+    
     {
-        if (pointsADD == 24)
+        
+        if (pointsADD <37)
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
