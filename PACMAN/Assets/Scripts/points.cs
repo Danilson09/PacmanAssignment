@@ -25,10 +25,9 @@ public class points : MonoBehaviour
 
         
     }
+    
 
     private void Update()
-
-    
     {
         
         if (pointsADD <37)
@@ -41,6 +40,9 @@ public class points : MonoBehaviour
         if (pointsADD == 0)
         {
             //call winning scene
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(++currentSceneIndex);
         }
     }
 

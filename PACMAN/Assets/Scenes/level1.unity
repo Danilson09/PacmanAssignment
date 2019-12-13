@@ -132,6 +132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: points (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
+      objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -255,6 +260,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -380,6 +390,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: points (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
+      objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -503,6 +518,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -647,10 +667,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00901112, y: -0.0056538284}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -661,7 +681,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.41, y: 0.38}
+  m_Size: {x: 0.5121252, y: 0.4478482}
   m_EdgeRadius: 0
 --- !u!212 &605679125
 SpriteRenderer:
@@ -721,7 +741,7 @@ Transform:
   m_GameObject: {fileID: 605679123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.56, y: 12.39, z: 0}
-  m_LocalScale: {x: 5.5, y: 5.5, z: 0}
+  m_LocalScale: {x: 5.5, y: 5.84375, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -740,6 +760,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   speed: 20
+  pointsADD: 37
 --- !u!114 &605679128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -754,6 +775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   speed: 20
+  pointsADD: 37
 --- !u!50 &605679129
 Rigidbody2D:
   serializedVersion: 4
@@ -790,7 +812,7 @@ PrefabInstance:
     - target: {fileID: 1792383774867943866, guid: 066c0e6ebaa7acc4685ea770cf7f62af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1792383774867943866, guid: 066c0e6ebaa7acc4685ea770cf7f62af,
         type: 3}
@@ -897,6 +919,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -1021,6 +1048,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -1467,6 +1499,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: points (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
+      objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1590,6 +1627,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -1715,6 +1757,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: points (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
+      objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1838,6 +1885,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
       objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
@@ -3450,6 +3502,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: points (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6261720596065790177, guid: 42c152d611a21af4ab8f5ad222ffc856,
+        type: 3}
+      propertyPath: m_TagString
+      value: points
+      objectReference: {fileID: 0}
     - target: {fileID: 8089460640111923931, guid: 42c152d611a21af4ab8f5ad222ffc856,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3770,7 +3827,7 @@ PrefabInstance:
     - target: {fileID: 1792383774867943866, guid: 066c0e6ebaa7acc4685ea770cf7f62af,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13
+      value: 11.2
       objectReference: {fileID: 0}
     - target: {fileID: 1792383774867943866, guid: 066c0e6ebaa7acc4685ea770cf7f62af,
         type: 3}

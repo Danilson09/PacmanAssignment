@@ -7,11 +7,39 @@ public class PACBOX : MonoBehaviour
 {
     public int health = 3;
     public float speed = 4.0f;
+    public int pointsADD = 37;
 
     private Vector2 direction = Vector2.zero;
 
 
-   
+    void OnTriggerEnter2D(Collider2D co)
+    {
+        
+
+        if (co.gameObject.tag == "points")
+        {
+            pointsADD--;
+        }
+      
+
+        {
+        if (co.name == "prefab4"){
+            health--;
+        }
+                
+                
+
+
+            //if (health == 0)
+                //make the defeat scene
+
+
+        }
+        
+    }
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,12 +48,37 @@ public class PACBOX : MonoBehaviour
 
     // Update is called once per frame
     void Update(){
- 
+
+        
         CheckInput();
-     
         move();
+
+         
+        
+        if (pointsADD == 26)
+        {
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(++currentSceneIndex);
+        }
+
+        if (pointsADD == 0)
+        {
+            //call winning scene
+            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+
+            SceneManager.LoadScene(++currentSceneIndex);
+        }
+    
+
+
     
     }
+
+
+
+
+
     
 
     void CheckInput() {
@@ -43,27 +96,7 @@ public class PACBOX : MonoBehaviour
         void move (){
             transform.localPosition += (Vector3)(direction * speed) * Time.deltaTime;
         }
-
-        void OnTriggerEnter2D(Collider2D co)
-        {
-            if (co.name == "prefab4")
-                health--;
-                
-
-
-            //if (health == 0)
-                //make the defeat scene
-
-
-            
-
-            
-
-
-        }
-
         
-
         
  
 }   
