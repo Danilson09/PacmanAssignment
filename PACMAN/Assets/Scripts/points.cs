@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class points : MonoBehaviour
 {
     
-    public int pointsADD = 37;
+    
 
     
     void OnTriggerEnter2D(Collider2D co)
@@ -16,7 +16,7 @@ public class points : MonoBehaviour
         {
 
             Destroy(this.gameObject);
-            pointsADD--;
+            
             
 
 
@@ -29,23 +29,6 @@ public class points : MonoBehaviour
 
     private void Update()
     {
-        
-        if (pointsADD <37)
-        {
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-            SceneManager.LoadScene(++currentSceneIndex);
-        }
-
-        if (pointsADD == 0)
-        {
-            //call winning scene
-            int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-
-            SceneManager.LoadScene(++currentSceneIndex);
-        }
+    
     }
-
-
-
 }

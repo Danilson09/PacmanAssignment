@@ -131,6 +131,7 @@ GameObject:
   - component: {fileID: 7099369}
   - component: {fileID: 7099368}
   - component: {fileID: 7099367}
+  - component: {fileID: 7099370}
   m_Layer: 0
   m_Name: prefab4
   m_TagString: Untagged
@@ -227,6 +228,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7099370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7099366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980fffc1c2a2e534bbab369356ffc608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  cur: 0
+  speed: 0.3
 --- !u!1 &102986638
 GameObject:
   m_ObjectHideFlags: 0
@@ -373,6 +389,7 @@ MonoBehaviour:
   health: 3
   speed: 20
   pointsADD: 37
+  pointsADD2: 1
 --- !u!114 &102986644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -388,6 +405,7 @@ MonoBehaviour:
   health: 3
   speed: 20
   pointsADD: 37
+  pointsADD2: 1
 --- !u!1001 &202036065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -403,7 +421,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -483,6 +501,7 @@ GameObject:
   - component: {fileID: 273986628}
   - component: {fileID: 273986627}
   - component: {fileID: 273986626}
+  - component: {fileID: 273986629}
   m_Layer: 0
   m_Name: prefab4 (1)
   m_TagString: Untagged
@@ -579,6 +598,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &273986629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273986625}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980fffc1c2a2e534bbab369356ffc608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  cur: 0
+  speed: 0.3
 --- !u!1 &276675584 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -623,7 +657,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &338191275 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -668,7 +701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &467186422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -684,7 +716,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -797,7 +829,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -896,7 +927,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -980,7 +1011,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -1093,7 +1124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &701359510
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1105,6 +1135,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: points (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
+        type: 3}
+      propertyPath: m_TagString
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -1188,7 +1223,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -1272,7 +1307,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -1352,9 +1387,10 @@ GameObject:
   - component: {fileID: 844425780}
   - component: {fileID: 844425779}
   - component: {fileID: 844425778}
+  - component: {fileID: 844425781}
   m_Layer: 0
   m_Name: prefab4 (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1448,6 +1484,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844425781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844425777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 980fffc1c2a2e534bbab369356ffc608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  cur: 0
+  speed: 0.3
 --- !u!1 &846293054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -1492,7 +1543,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &893678720 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -1537,7 +1587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &901524361
 GameObject:
   m_ObjectHideFlags: 0
@@ -3039,7 +3088,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &1041508829 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -3084,7 +3132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &1052189048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3100,7 +3147,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3184,7 +3231,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3297,7 +3344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &1365692084 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -3342,7 +3388,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &1371983923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3358,7 +3403,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3471,7 +3516,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &1440574902 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -3516,7 +3560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &1443949499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3532,7 +3575,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3616,7 +3659,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3700,7 +3743,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -3813,7 +3856,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &1658112827
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3942,7 +3984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &1700001429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -3987,7 +4028,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &1854585267
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4003,7 +4043,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -4087,7 +4127,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -4171,7 +4211,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -4284,7 +4324,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &2004424743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -4329,7 +4368,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1 &2012101450 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
@@ -4374,7 +4412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &2037675245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4390,7 +4427,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
@@ -4503,7 +4540,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsADD: 37
 --- !u!1001 &4405862563435323599
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4519,7 +4555,7 @@ PrefabInstance:
     - target: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}
       propertyPath: m_TagString
-      value: points
+      value: points2
       objectReference: {fileID: 0}
     - target: {fileID: 1442245579756739826, guid: da3c6142a011c7443b627f2247d5883b,
         type: 3}

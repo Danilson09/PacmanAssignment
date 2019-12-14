@@ -8,6 +8,7 @@ public class PACBOX : MonoBehaviour
     public int health = 3;
     public float speed = 4.0f;
     public int pointsADD = 37;
+    public int pointsADD2 = 1;
 
     private Vector2 direction = Vector2.zero;
 
@@ -20,11 +21,16 @@ public class PACBOX : MonoBehaviour
         {
             pointsADD--;
         }
+
+          if (co.gameObject.tag == "points2")
+        {
+            pointsADD2 = pointsADD2 + 1;
+        }
       
 
         {
-        if (co.name == "prefab4"){
-            health--;
+        if (co.gameObject.tag == "Enemy"){
+            health = health -1;
         }
                 
                 
@@ -55,21 +61,23 @@ public class PACBOX : MonoBehaviour
 
          
         
-        if (pointsADD == 26)
+        if (pointsADD == 25)
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
             SceneManager.LoadScene(++currentSceneIndex);
         }
 
-        if (pointsADD == 0)
+        if (pointsADD2 == 19 && health>0)
         {
             //call winning scene
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
             SceneManager.LoadScene(++currentSceneIndex);
         }
-    
+
+        //make loosing screen
+        
 
 
     
