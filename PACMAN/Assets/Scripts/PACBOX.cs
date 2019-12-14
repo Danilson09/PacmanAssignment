@@ -9,6 +9,7 @@ public class PACBOX : MonoBehaviour
     public float speed = 4.0f;
     public int pointsADD = 37;
     public int pointsADD2 = 1;
+    public AudioSource tickSource;
 
     private Vector2 direction = Vector2.zero;
 
@@ -31,6 +32,8 @@ public class PACBOX : MonoBehaviour
         {
         if (co.gameObject.tag == "Enemy"){
             health = health -1;
+            
+            tickSource.Play();
         }
                 
                 
@@ -49,7 +52,7 @@ public class PACBOX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+       tickSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
