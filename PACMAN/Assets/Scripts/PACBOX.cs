@@ -10,6 +10,7 @@ public class PACBOX : MonoBehaviour
     public int pointsADD = 37;
     public int pointsADD2 = 1;
     public AudioSource tickSource;
+    
 
     private Vector2 direction = Vector2.zero;
 
@@ -39,7 +40,7 @@ public class PACBOX : MonoBehaviour
         }
                 
                 
-
+        
 
             //if (health == 0)
                 //make the defeat scene
@@ -64,7 +65,9 @@ public class PACBOX : MonoBehaviour
         CheckInput();
         move();
 
-         
+        if(health == 0){
+            SceneManager.LoadScene("LosingScreen");
+        }
         
         if (pointsADD == 25)
         {
