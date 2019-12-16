@@ -20,11 +20,13 @@ public class PACBOX : MonoBehaviour
 
         if (co.gameObject.tag == "points")
         {
+            
             pointsADD--;
         }
 
           if (co.gameObject.tag == "points2")
         {
+            
             pointsADD2 = pointsADD2 + 1;
         }
       

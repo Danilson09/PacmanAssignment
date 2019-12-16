@@ -16,7 +16,7 @@ public class points : MonoBehaviour
         {
 
             Destroy(this.gameObject);
-            
+            ScoreScript.scoreValue +=1;
             
 
 
