@@ -6,13 +6,17 @@ using UnityEngine.SceneManagement;
 public class PACBOX : MonoBehaviour
 {
     public int health = 3;
-    public int health2 = 1;
     public float speed = 4.0f;
     public int pointsADD = 37;
     public int pointsADD2 = 1;
     public AudioSource tickSource;
     
+    public Transform spawnpoint;
 
+
+    public void Respawn(){
+        this.transform.position=spawnpoint.position;
+    }
     private Vector2 direction = Vector2.zero;
 
 
@@ -24,6 +28,7 @@ public class PACBOX : MonoBehaviour
         {
             
             pointsADD--;
+            
         }
 
           if (co.gameObject.tag == "points2")
@@ -36,8 +41,9 @@ public class PACBOX : MonoBehaviour
         {
         if (co.gameObject.tag == "Enemy"){
             health = health -1;
-            
             tickSource.Play();
+            Respawn();
+
         }
                 
                 

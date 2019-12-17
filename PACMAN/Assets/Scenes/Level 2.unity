@@ -488,6 +488,7 @@ MonoBehaviour:
   pointsADD: 37
   pointsADD2: 1
   tickSource: {fileID: 0}
+  spawnpoint: {fileID: 0}
 --- !u!114 &102986644
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -505,6 +506,7 @@ MonoBehaviour:
   pointsADD: 37
   pointsADD2: 1
   tickSource: {fileID: 0}
+  spawnpoint: {fileID: 1675757774}
 --- !u!82 &102986645
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4329,6 +4331,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed802422363218844a2023e5175b3577, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1675757773
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1675757774}
+  m_Layer: 0
+  m_Name: Spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1675757774
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675757773}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.68, y: 12.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1700001429 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1283677890299411861, guid: da3c6142a011c7443b627f2247d5883b,

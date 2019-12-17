@@ -120,6 +120,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &65190713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 65190714}
+  m_Layer: 0
+  m_Name: Spawnpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &65190714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65190713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 14.68, y: 12.83, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &281947115
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -743,7 +773,6 @@ GameObject:
   - component: {fileID: 605679125}
   - component: {fileID: 605679124}
   - component: {fileID: 605679128}
-  - component: {fileID: 605679127}
   - component: {fileID: 605679129}
   - component: {fileID: 605679130}
   m_Layer: 0
@@ -836,29 +865,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605679123}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.56, y: 12.39, z: 0}
+  m_LocalPosition: {x: 14.5, y: 12.39, z: 0}
   m_LocalScale: {x: 5.5, y: 5.84375, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &605679127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 605679123}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5c19b2167031024a84a78ef353c4eb9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 3
-  speed: 20
-  pointsADD: 37
-  pointsADD2: 1
-  tickSource: {fileID: 0}
 --- !u!114 &605679128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,10 +884,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  health2: 3
   speed: 20
   pointsADD: 37
   pointsADD2: 1
   tickSource: {fileID: 0}
+  spawnpoint: {fileID: 65190714}
 --- !u!50 &605679129
 Rigidbody2D:
   serializedVersion: 4
@@ -1250,6 +1264,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.38}
   m_EdgeRadius: 0
+--- !u!114 &852475586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852475584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d72054ebdd90749980852fa6644e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1066510977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1832,6 +1858,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.38}
   m_EdgeRadius: 0
+--- !u!114 &1404710474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1404710472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d72054ebdd90749980852fa6644e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1411686165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4650,3 +4688,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41, y: 0.38}
   m_EdgeRadius: 0
+--- !u!114 &8295816344197577632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8295816344197577630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8d72054ebdd90749980852fa6644e76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
