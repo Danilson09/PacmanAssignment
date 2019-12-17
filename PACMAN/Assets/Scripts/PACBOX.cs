@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PACBOX : MonoBehaviour
 {
     public int health = 3;
+    public int health2 = 1;
     public float speed = 4.0f;
     public int pointsADD = 37;
     public int pointsADD2 = 1;
@@ -42,8 +43,6 @@ public class PACBOX : MonoBehaviour
                 
         
 
-            //if (health == 0)
-                //make the defeat scene
 
 
         }
@@ -68,12 +67,23 @@ public class PACBOX : MonoBehaviour
         if(health == 0){
             SceneManager.LoadScene("LosingScreen");
         }
+
         
-        if (pointsADD == 25)
+        
+        if (pointsADD == 25 && health>0)
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
             SceneManager.LoadScene(++currentSceneIndex);
+
+            switch(health){
+                case 2:
+                    health++;
+                    break;
+                case 1:
+                    health += 2;
+                    break;
+            }
         }
 
         if (pointsADD2 == 19 && health>0)
